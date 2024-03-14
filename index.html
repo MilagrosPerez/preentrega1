@@ -1,13 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>CODERHOUSE JAVA SCRIPT</h1>
-    <h2>PREENTREGA 1</h2>
+    <div class="login-container">
+        <h2>Iniciar sesión</h2>
+        <form id="formulario">
+            <div class="input-group">
+                <label for="usuario">Nombre de usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+            </div>
+            <div class="input-group">
+                <label for="pass">Contraseña:</label>
+                <input type="password" id="pass" name="pass" required>
+            </div>
+            <div>
+                <p id="msg"></p>                
+            </div>
+            <button type="submit">Iniciar sesión</button>
+        </form>
+        <p>¿No tienes cuenta? <a href="./pages/registrousuario.html">Registrarse</a></p>
+    </div>
 
     <script src="./js/main.js"></script>
 </body>
